@@ -47,19 +47,31 @@ A prevalência de compras no teste é 0,155 (é a PR-AUC de um modelo sem poder 
 - O `page_value` responde por boa parte do desempenho (PR-AUC cai de 0,76 para 0,38 sem ele) e é potencialmente vazado.
 - Random Forest e HistGradientBoosting empatam tecnicamente e superam o baseline linear.
 
-## Como executar
+## Estrutura do repositório
 
-1. Instale as dependências: `pip install -r requirements.txt`
-2. Mantenha os arquivos todos na mesma pasta, lado a lado:
-   ```
-   .
-   ├── Projeto_Shoppers.ipynb
-   ├── README.md
-   ├── requirements.txt
-   ├── online_shoppers_train.csv
-   └── online_shoppers_test.csv
-   ```
-3. Abra o notebook e use **Run All**. A busca de hiperparâmetros leva alguns minutos.
+```
+.
+├── README.md
+├── Apresentacao.html          # slides do seminário
+├── apresentacao_assets/       # gráficos usados nos slides
+└── Online_Shoppers/
+    ├── Projeto_Shoppers.ipynb
+    ├── requirements.txt
+    ├── online_shoppers_train.csv
+    └── online_shoppers_test.csv
+```
+
+## Apresentação (seminário)
+
+Slides em HTML para a apresentação presencial (10–15 min), cobrindo base, EDA, modelos e conclusões.
+
+1. Abra `Apresentacao.html` no navegador (mantenha a pasta `apresentacao_assets/` ao lado).
+2. Navegue com `←` `→`, clique nas laterais ou setas do teclado. `F` alterna tela cheia.
+
+## Como executar o notebook
+
+1. Instale as dependências: `pip install -r Online_Shoppers/requirements.txt`
+2. Abra `Online_Shoppers/Projeto_Shoppers.ipynb` e use **Run All**. A busca de hiperparâmetros leva alguns minutos.
 
 O notebook lê os CSVs por caminho relativo, da pasta onde ele está. Se existir uma subpasta `data/`, ele também a aceita.
 No Google Colab, se os CSVs não estiverem ao lado do notebook, ele monta o Google Drive e procura em
