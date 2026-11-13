@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34774939/README.md)
 # Intenção de compra em loja virtual (Online Shoppers Purchasing Intention)
 
 Projeto da disciplina **Introdução ao Aprendizado de Máquina** · IFSP Campinas · Tecnologia em Análise e Desenvolvimento de Sistemas.
